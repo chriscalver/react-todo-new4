@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #354f52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+img {
+  border-style: solid;
+  border-width: 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+}
+
+.TodoWrapperLS {
+  background: #cad2c5;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+  max-width: 410px;
+  align-items: center;
+}
+
+.TodoForm {
+  width: 350px;
+  margin-bottom: 1rem;
+}
+
+
+.EditTodoForm {
+  width: 350px;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: #52796f;
+  border: 1px solid #8758ff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 295px;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.todo-input::placeholder {
+  color: #fff;
+  
+}
+
+.todo-btn-edit {
+  background: #c8062d;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 50px;
+  
+}
+
+.todo-btn {
+  background: #354f52;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 50px;
+  
+}
+
+.Todo {
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  background: #354f52;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  width: 345px;
+}
+
+  p {
+    width: 225px;
+    word-wrap: anywhere;
+    text-align: justify;
+  }
+
+.fa-trash-can {
+  margin-left: 1rem;
+}
+
+.comment-icon {
+  margin-left: 1rem;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #ec0b0b;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon,
+.comment-icon {
+  cursor: pointer;
+}
+ 
