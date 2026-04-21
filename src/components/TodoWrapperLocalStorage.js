@@ -50,10 +50,15 @@ export const TodoWrapperLocalStorage = () => {
   };
   const sendAsText = (id) => {
     const newTodos = todos.filter((todo) => todo.id === id);
+    const toNumber = window.prompt("Enter destination number (E.164 format, e.g. +15195551234):", "+15197099549");
+
+    if (!toNumber || !toNumber.trim()) {
+      return;
+    }
    
     const newTodos2 = JSON.stringify(newTodos[0].task);
     // console.log(newTodos2);
-    SendText("New Reminder " + newTodos2);
+    SendText("New Reminder " + newTodos2, toNumber.trim());
   };
   const editTodo = (id) => {
     setTodos(
