@@ -58,7 +58,7 @@ export const TodoWrapperLocalStorage = () => {
    
     const newTodos2 = JSON.stringify(newTodos[0].task);
     // console.log(newTodos2);
-    SendText("New Reminder " + newTodos2, toNumber.trim());
+    SendText("Message from the List Crusher App " + newTodos2, toNumber.trim());
   };
   const editTodo = (id) => {
     setTodos(
